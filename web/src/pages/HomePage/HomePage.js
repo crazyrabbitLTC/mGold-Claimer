@@ -34,18 +34,23 @@ const HomePage = () => {
       send()
     }
 
-    getStatus();
+    getStatus()
   }, [])
 
   console.log('Token Balance', tokenBal?.toString())
   return (
     <>
       <p>
-        $PAPER Balance is:{' '}
+        <Text>
+          $PAPER is not real money, and it should not be used as real money or
+          thought of as real money. It is an in-game asset to be used by people
+          playing DopeWarsLoot games.{' '}
+        </Text>
+        Your $PAPER Balance is:{' '}
         {tokenBal ? utils.formatEther(tokenBal.toString(), 'wei') : 0}
       </p>
       <Button onClick={() => send()}>Claim All</Button>
-
+<Text>Use at your own risk. No warrenties.</Text>
       <Text>
         {state.status == 'Exception'
           ? 'No $PAPER availible to claim for this Address'
