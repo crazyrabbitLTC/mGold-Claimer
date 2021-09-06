@@ -1,6 +1,6 @@
 import { routes } from '@redwoodjs/router'
 import { Flex, Text, Link, Image } from '@chakra-ui/react'
-import Web3Connect from '../../components/Web3Connect'
+import Web3Connect from '../../components/Web3connect/Web3connect'
 
 const MainLayout = ({ children }) => {
   return (
